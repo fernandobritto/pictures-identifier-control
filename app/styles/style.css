@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   margin: 0;
   padding: 0;
@@ -42,24 +41,61 @@ a img {
 b, i {
   display: none; }
 
-#main {
-  /* direction: rtl; - propriedade que define a direção inicial e final */
-  width: 70%;
-  height: 400px;
+body, html {
+  height: 100%; }
+
+#wrapper {
   display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  /* justify-content: center; */
-  justify-content: space-between;
-  border: 1px solid #000000; }
-  #main > div {
-    width: 15%;
-    height: 100px;
-    border: 1px solid #000000;
-    /* flex-grow: 1; */ }
-  #main > div:nth-child(2) {
-    /* flex-grow: 3; */
-    align-self: flex-end; }
+  height: 100%; }
+  #wrapper #sidebar {
+    background-color: #292929;
+    border: 1px solid #292929;
+    width: 250px;
+    height: 100%;
+    flex-direction: column; }
+    #wrapper #sidebar ul {
+      list-style: none; }
+      #wrapper #sidebar ul li {
+        padding: 15px; }
+        #wrapper #sidebar ul li a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 16px; }
+        #wrapper #sidebar ul li:hover {
+          background-color: #222222; }
+      #wrapper #sidebar ul .user {
+        color: #ffffff;
+        text-align: center; }
+      #wrapper #sidebar ul:hover {
+        background-color: #292929; }
+  #wrapper #main {
+    flex: 1;
+    flex-direction: row; }
+    #wrapper #main #header {
+      flex: 1;
+      flex-direction: row;
+      height: 65px;
+      background-color: #dedede; }
+      #wrapper #main #header h3 {
+        color: #292929;
+        font-size: 20px;
+        padding: 13px; }
+    #wrapper #main #content {
+      margin-top: 50px;
+      display: flex; }
+      #wrapper #main #content .panel {
+        flex: 1;
+        margin: 0 25px;
+        padding: 10px;
+        border: 1px solid #292929; }
+        #wrapper #main #content .panel .panel-heading {
+          border-bottom: 1px solid #dedede; }
+        #wrapper #main #content .panel .panel-body {
+          margin: 5px 0 0 0;
+          text-align: justify; }
+          #wrapper #main #content .panel .panel-body form input {
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */
