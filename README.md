@@ -35,10 +35,3 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch
 
 
 
-### Justify-content
-A propriedade **justify-content** alinha os itens do contêiner flexível quando os itens não usam todo o espaço disponível no eixo principal (horizontalmente).
-```sh
-justify-content: flex-start | flex-end | center | space-between | space-around
-```
-
-
