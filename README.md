@@ -26,12 +26,4 @@ flex-wrap: nowrap | wrap | wrap-reverse
 
 
 
-### Align-item e Align-self
-A propriedade **align-items** especifica o alinhamento padrão para todos os itens dentro de um container enquanto a propriedade **align-self** especifica o alinhamento para um item especifico dentro do container flexível.
-```sh
-align-items: flex-start | flex-end | center | baseline | stretch
-align-self: auto | flex-start | flex-end | center | baseline | stretch
-```
-
-
 
