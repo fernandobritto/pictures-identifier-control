@@ -15,12 +15,16 @@ abstract class Entity
 
 	public function findAll()
 	{
-		return 'SELECT * FROM products';
+		$sql = 'SELECT * FROM products';
+
+		$get = $this->conn->query($sql);
+
+		return $get->fetchAll(PDO::FETCH_ASSOC);
+
 	}
 
 	public function find()
 	{
-		return 'SELECT * FROM products WHERE id =10
-		';
+		return 'SELECT * FROM products WHERE id =10';
 	}
 }
