@@ -11,10 +11,9 @@ class HomeController
 	{
 		$pdo = new \PDO('mysql:dbname=db_produktkatalog; host=localhost', 'root', '');
 
-		$products = new Product($pdo);
-
 		$view = new View('site/index.phtml');
-		$view->products = $products->findAll();
+
+		$view->products = (new Product($pdo))->findAll();
 		return $view->render();
 	}
 }
