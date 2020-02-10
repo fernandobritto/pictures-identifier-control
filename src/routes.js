@@ -7,6 +7,6 @@ routes.get('/products', ProductController.index)
 routes.get('/products/:id', ProductController.show)
 routes.post('/products', ProductController.store)
 routes.put('/products/:id', ProductController.update)
-routes.delete('/products', ProductController.destroy)
+//routes.delete('/products', ProductController.destroy)
 
 module.exports = routes

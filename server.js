@@ -15,7 +15,7 @@ app.use(cors())
 
 
 // Start Database
-mongoose.connect('mongodb//localhost:27017/produktkatalog-api', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:admin@cluster-g8agh.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 requireDir('./src/models')
 
 // Routes
@@ -23,4 +23,4 @@ app.use('/api', require('./src/routes'))
 
 
 // localhost: Door
-app.listen(7025)
+app.listen(2020)
