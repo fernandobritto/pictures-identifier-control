@@ -121,4 +121,7 @@
   'Backend\\Classes\\FormWidgetBase' => 'modules/backend/classes/FormWidgetBase.php',
   'Backend\\Traits\\FormModelWidget' => 'modules/backend/traits/FormModelWidget.php',
   'Backend\\FormWidgets\\FileUpload' => 'modules/backend/formwidgets/FileUpload.php',
+  'Cms\\Twig\\ContentNode' => 'modules/cms/twig/ContentNode.php',
+  'Cms\\Classes\\Content' => 'modules/cms/classes/Content.php',
+  'System\\Helpers\\View' => 'modules/system/helpers/View.php',
 );
