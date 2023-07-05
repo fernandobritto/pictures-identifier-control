@@ -1,3 +1,18 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# DynamoDB Local files
+.dynamodb/
+resources
+
+# dotenv environment variables file
+.env
+.env.test
+
+# OS generated files
 .DS_Store
-*.log
-/vendor
+.DS_Store?

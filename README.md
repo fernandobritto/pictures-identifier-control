@@ -1,33 +1,56 @@
-<p align="center">
-    <img src="https://github.com/octobercms/october/blob/master/themes/demo/assets/images/october.png?raw=true" alt="October" width="25%" height="25%" />
-</p>
+# Pictures Identifier Control
 
-[October](https://octobercms.com) is a Content Management System (CMS) and web platform whose sole purpose is to make your development workflow simple again. It was born out of frustration with existing systems. We feel building websites has become a convoluted and confusing process that leaves developers unsatisfied. We want to turn you around to the simpler side and get back to basics.
+> ### Image recognition with AWS Rekognition using NodeJS and Serverless Framework
 
-October's mission is to show the world that web development is not rocket science.
+&nbsp;&nbsp;&nbsp;
 
-![Stable Build](https://github.com/octobercms/october/workflows/Tests/badge.svg?branch=master)
-[![License](https://poser.pugx.org/october/october/license.svg)](https://packagist.org/packages/october/october)
+## 🛠 Resources
 
-## Installing October
+The following resources were used in the creation of this project:
 
-Instructions on how to install October can be found at the [installation guide](https://octobercms.com/docs/setup/installation).
+- [Amazon Rekognition][rekognition]
+- [Serverless][serverless]
+- [AWS SDK][aws-sdk]
+- [Node.js][nodejs]
+- [ESLint][eslint]
 
-### Quick start installation
+[rekognition]: https://docs.aws.amazon.com/rekognition/index.html
+[serverless]: https://www.serverless.com/
+[aws-sdk]: https://aws.amazon.com/sdk-for-javascript/
+[nodejs]: https://nodejs.org/
+[eslint]: https://eslint.org/
+[license]: https://opensource.org/licenses/MIT
 
-For advanced users, run this in your terminal to install October from command line:
+&nbsp;&nbsp;
 
-```shell
-php -r "eval('?>'.file_get_contents('https://octobercms.com/api/installer'));"
+## how to run the project
+
+```bash
+# clone repository
+git clone git@github.com:fernandobritto/pictures-identifier-control.git
+
+# enter the project folder
+cd pictures-identifier-control
+
+# install dependencies
+yarn install
+
+# run the project
+serverless deploy
 ```
 
-If you plan on using a database, run this command:
+&nbsp;&nbsp;&nbsp;
 
-```shell
-php artisan october:install
-```
+## 📜 License
 
+By using this project, you agree to be bound by the terms of the MIT License. Check out the LICENSE.md file for details.
 
-## Foundation library
+&nbsp;&nbsp;&nbsp;
 
-The CMS uses [Laravel](https://laravel.com) as a foundation PHP framework.
+# Author
+
+Fernando Britto
+
+https://fernandobritto.github.io/
+
+https://www.linkedin.com/in/fernando-britto/
