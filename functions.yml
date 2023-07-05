@@ -1,0 +1,13 @@
+hello:
+  handler: source/handler.hello
+  events:
+    - httpApi:
+        path: /teste/serverless
+        method: get
+picturesIdentifier:
+  description: ''
+  handler: source/handlers/main.handler
+  events:
+    - httpApi:
+        path: /picture
+        method: get
